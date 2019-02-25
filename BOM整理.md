@@ -30,3 +30,25 @@
 在移动设备chrome浏览器中，如果页面元素超过了设备宽度，如375屏幕，元素达到了600，则innerWidth等于600，innerHeight会按比例增大
 此时clientWidth == outerWidth == 375, 高亦然
 
+* screen.width screen.height
+
+    设备像素值，在移动端和outer属性相对应，旋转屏幕亦然
+
+## location
+
+* 位置操作
+
+    设置location.href和location属性为新的url，则页面会跳转到新url，同时生成历史记录
+    使用location.replace(url),不会生成历史记录
+
+* reload
+
+    reload(true)强制从服务器重新加载
+    reload()调用了缓存中的数据
+
+## history
+
+* history.go(num)
+* history.back()
+* history.forward()
+* history.length
